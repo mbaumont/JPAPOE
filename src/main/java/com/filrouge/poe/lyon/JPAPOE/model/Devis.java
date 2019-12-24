@@ -24,7 +24,8 @@ import javax.persistence.TemporalType;
 	@NamedQuery( name = "Devis.findAll",
 	query = "SELECT dev FROM Devis AS dev"),
 	@NamedQuery( name = "Devis.findByClient",
-	query = "SELECT dev FROM Devis AS dev WHERE dev.client.id like ?1")
+	query = "SELECT dev FROM Devis AS dev WHERE dev.client.id like ?1"),
+
 })
 
 public class Devis {
